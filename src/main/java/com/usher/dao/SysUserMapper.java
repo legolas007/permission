@@ -1,6 +1,6 @@
 package com.usher.dao;
 
-import com.usher.beans.PageQuery;
+
 import com.usher.model.SysUser;
 import org.apache.ibatis.annotations.Param;
 
@@ -27,7 +27,7 @@ public interface SysUserMapper {
 
     int countByDeptId(@Param("deptId") int deptId);
 
-    List<SysUser> getPageByDeptId(@Param("deptId") int deptId, @Param("page") PageQuery page);
+/*    List<SysUser> getPageByDeptId(@Param("deptId") int deptId, @Param("page") PageQuery page);*/
 
     List<SysUser> getByIdList(@Param("idList") List<Integer> idList);
 

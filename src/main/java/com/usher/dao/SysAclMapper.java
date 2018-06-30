@@ -1,6 +1,6 @@
 package com.usher.dao;
 
-import com.usher.beans.PageQuery;
+
 import com.usher.model.SysAcl;
 import org.apache.ibatis.annotations.Param;
 
@@ -21,7 +21,7 @@ public interface SysAclMapper {
 
     int countByAclModuleId(@Param("aclModuleId") int aclModuleId);
 
-    List<SysAcl> getPageByAclModuleId(@Param("aclModuleId") int aclModuleId, @Param("page") PageQuery page);
+    /*List<SysAcl> getPageByAclModuleId(@Param("aclModuleId") int aclModuleId, @Param("page") PageQuery page);*/
 
     int countByNameAndAclModuleId(@Param("aclModuleId") int aclModuleId, @Param("name") String name, @Param("id") Integer id);
 

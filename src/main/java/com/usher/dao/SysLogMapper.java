@@ -1,7 +1,5 @@
 package com.usher.dao;
 
-import com.usher.beans.PageQuery;
-import com.usher.dto.SearchLogDto;
 import com.usher.model.SysLog;
 import com.usher.model.SysLogWithBLOBs;
 import org.apache.ibatis.annotations.Param;
@@ -23,7 +21,7 @@ public interface SysLogMapper {
 
     int updateByPrimaryKey(SysLog record);
 
-    int countBySearchDto(@Param("dto") SearchLogDto dto);
+    /*int countBySearchDto(@Param("dto") SearchLogDto dto);
 
-    List<SysLogWithBLOBs> getPageListBySearchDto(@Param("dto") SearchLogDto dto, @Param("page") PageQuery page);
+    List<SysLogWithBLOBs> getPageListBySearchDto(@Param("dto") SearchLogDto dto, @Param("page") PageQuery page);*/
 }
